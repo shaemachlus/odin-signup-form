@@ -96,6 +96,7 @@ button {
   margin-bottom: 20px;
   background-color: #7b9d6d;
   color: white;
+  cursor: pointer;
 }
 
 .content {

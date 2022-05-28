@@ -31,22 +31,22 @@
       <div class="form-box">
         <p class="form-header">Let's do this!</p>
         <br />
-        <form action="" method="post">
+        <form action="" id="myform" method="post">
           <div class="form-item">
             <label for="first-name">First name</label><br />
             <input type="text" id="first-name" name="first-name" />
           </div>
           <div class="form-item">
             <label for="last-name">Last name</label><br />
-            <input type="text" id="last-name" name="last-name" />
+            <input type="text" id="last-name" name="last-name" required />
           </div>
           <div class="form-item">
             <label for="email">Email</label><br />
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
           </div>
           <div class="form-item">
             <label for="phone-num">Phone</label><br />
-            <input type="tel" name="phone-num" id="phone-num" />
+            <input type="tel" name="phone-num" id="phone-num" required />
           </div>
           <div class="form-item match">
             <label for="password">Password</label><br />
@@ -54,7 +54,8 @@
               type="password"
               name="password"
               id="password"
-              class="error match"
+              class="error"
+              required
             />
           </div>
           <div class="form-item">
@@ -64,12 +65,16 @@
               name="password-confirm"
               id="password-confirm"
               class="error"
+              required
             />
           </div>
         </form>
       </div>
       <div class="outro">
-        <button type="submit">Create Account</button> <br />
+        <button form="myform" type="submit" value="submit">
+          Create Account
+        </button>
+        <br />
         <p>Already have an account? <a class="login" href="">Log in</a></p>
       </div>
     </div>
