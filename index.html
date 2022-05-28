@@ -48,9 +48,14 @@
             <label for="phone-num">Phone</label><br />
             <input type="tel" name="phone-num" id="phone-num" />
           </div>
-          <div class="form-item">
+          <div class="form-item match">
             <label for="password">Password</label><br />
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="error match"
+            />
           </div>
           <div class="form-item">
             <label for="password-confirm">Confirm password</label><br />
@@ -58,6 +63,7 @@
               type="password"
               name="password-confirm"
               id="password-confirm"
+              class="error"
             />
           </div>
         </form>
